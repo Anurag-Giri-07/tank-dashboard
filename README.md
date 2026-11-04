@@ -37,6 +37,7 @@ From `api-tests/`, run the API client tests with Jest:
 
 ```bash
 cd api-tests
+npm install
 npm test
 ```
 
