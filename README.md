@@ -67,7 +67,7 @@ The page should show:
 3. A simple tank/progress bar that changes colour as the level drops.
    Sort the readings by timestamp before using them, and handle empty data without crashing. Put the calculation logic (current, min, max, alerts) in a separate file, src/tankStats.ts, so it's easy to read and test.
 
-When you're done, don't commit anything. Stop and tell me: (1) how to run it, (2) what I should check in the browser, and (3) the exact git commands and a commit message I should run.
+When you're done, don't commit anything. Stop and tell me: (1) how to run it, (2) what I should check in the browser.
 
 ### Phase 3 prompt:
 
@@ -83,7 +83,7 @@ Notes:
 - For the stale last_seen test, build the timestamp relative to Date.now() (or use Jest fake timers), so the test doesn't break over time. Also test a fresh last_seen gives last_seen_stale: false.
   The root project uses Vitest for src/ tests. Make sure Vitest doesn't pick up the Jest tests: restrict it to src/ in vite.config.ts (test.include or test.exclude). Then run npm test at the root AND npm test inside api-tests/, and show me both outputs. If anything fails, tell me why before changing code, so I understand what went wrong.
 
-When you're done, don't commit. Tell me the git commands and a commit message to run.
+When you're done, don't commit.
 
 ## Wi-Fi Loss Testing
 
